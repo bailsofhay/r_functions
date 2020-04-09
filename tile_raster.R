@@ -73,7 +73,7 @@ tile_raster = function(input_raster,
         if (j == 1)
         {
           ystart = 1
-          yend = start + nr
+          yend = ystart + nr
         }
         if (j != 1 & j != js)
         {
@@ -123,7 +123,7 @@ tile_raster = function(input_raster,
         if (j == 1)
         {
           ystart = 1
-          yend = start + nr
+          yend = ystart + nr
         }
         if (j != 1 & j != js)
         {
@@ -150,7 +150,7 @@ tile_raster = function(input_raster,
       }
     }
   }
-  if (return_cutpoint == TRUE)
+  if (return_cutpoints == TRUE)
   {
     names(cutpoints) = c("xmin", "xmax", "ymin", "ymax")
     return(cutpoints)
